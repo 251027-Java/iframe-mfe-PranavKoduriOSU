@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App 2</title>
+</head>
+<body>
+    <h1>bye</h1>
+    <button id="color">Change Shell Color</button>
+    <script>
+        document.getElementById('color').addEventListener('click', function() {
+            window.parent.postMessage({ color: "#00f" }, '*');
+        });
+    </script>
+</body>
+</html>

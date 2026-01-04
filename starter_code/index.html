@@ -30,6 +30,7 @@
         }
         
         // TODO: Add listener for postMessage
+        window.addEventListener('message', event => document.body.style.backgroundColor = event.data.color);
     </script>
 </body>
 </html>
